@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png"
+        />
+
+        <script src="./script.js" defer></script>
+
+        <link rel="stylesheet" href="../dist/css/normalize.css" />
+        <link rel="stylesheet" href="../dist/css/styles.css" />
+
+        <title>Frontend Mentor | Photosnap Website Challenge</title>
+    </head>
+    <body class="pricing">
+        <!-- HEADER START -->
+
+        <header class="header">
+            <a href="index.html">
+                <img
+                    class="header__logo"
+                    src="./assets/shared/desktop/logo.svg"
+                />
+            </a>
+            <ul class="header__links link-font">
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <a href="#" class="header__btn">
+                <button class="btn--invite link-font">Get an invite</button>
+            </a>
+            <img
+                src="./assets/shared/mobile/menu.svg"
+                alt="navigation menu icon"
+                class="header__menu__btn"
+                id="hamburger"
+            />
+
+            <div class="mobile__menu" id="mobileNav">
+                <ul class="mobile__menu__links">
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <a href="#" class="mobile__menu__btn">
+                    <button class="mobile__menu__btn">Get an invite</button>
+                </a>
+            </div>
+        </header>
+
+        <!-- HEADER END -->
+
+        <!-- HERO START -->
+
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 1250px)"
+                    srcset="./assets/pricing/desktop/hero.jpg"
+                />
+                <source
+                    media="(min-width: 600px)"
+                    srcset="./assets/pricing/tablet/hero.jpg"
+                />
+                <img
+                    src="./assets/pricing/mobile/hero.jpg"
+                    alt="features hero"
+                    class="hero__img"
+                />
+            </picture>
+            <div>
+                <div class="hero__text__container">
+                    <h2>Pricing</h2>
+                    <p>
+                        Create a your stories, Photosnap is a platform for
+                        photographers and visual storytellers. It’s the simple
+                        way to create and share your photos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO END -->
+
+        <!-- Monthly Yearly -->
+
+        <div class="toggle">
+            <label for="monthly" class="picked">Monthly</label>
+            <form>
+                <span data-plan="monthly" class="checked">
+                    <input type="radio" name="plan" id="monthly" checked />
+                </span>
+                <span data-plan="yearly">
+                    <input type="radio" name="plan" id="yearly" />
+                </span>
+            </form>
+            <label for="yearly">Yearly</label>
+        </div>
+
+        <div class="plans">
+            <div class="plans__card" id="basic">
+                <div class="text">
+                    <h3>basic</h3>
+                    <p>
+                        Includes basic usage of our platform. Recommended for
+                        new and aspiring photographers.
+                    </p>
+                </div>
+
+                <div class="price">
+                    <h2>$19<span>0</span>.00</h2>
+                    <p>per month</p>
+                </div>
+
+                <a href="#" class="planBtn">
+                    <button class="planBtn">pick plan</button>
+                </a>
+            </div>
+            <div class="plans__card pro" id="pro">
+                <div class="text">
+                    <h3>pro</h3>
+                    <p>
+                        More advanced features available. Recommended for
+                        photography veterans and professionals.
+                    </p>
+                </div>
+
+                <div class="price">
+                    <h2>$39<span>0</span>.00</h2>
+                    <p>per month</p>
+                </div>
+
+                <a href="#" class="planBtn">
+                    <button class="planBtn">pick plan</button>
+                </a>
+            </div>
+            <div class="plans__card" id="business">
+                <div class="text">
+                    <h3>business</h3>
+                    <p>
+                        Additional features available such as more detailed
+                        metrics. Recommended for business owners.
+                    </p>
+                </div>
+
+                <div class="price">
+                    <h2>$99<span>0</span>.00</h2>
+                    <p>per month</p>
+                </div>
+
+                <a href="#" class="planBtn">
+                    <button class="planBtn">pick plan</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- CHART START -->
+
+        <div class="chart">
+            <h2>Compare</h2>
+
+            <div class="chart__heading">
+                <h4>The Features</h4>
+
+                <ul>
+                    <li><h4>Basic</h4></li>
+                    <li><h4>pro</h4></li>
+                    <li><h4>business</h4></li>
+                </ul>
+            </div>
+
+            <div class="chart__row">
+                <h4>Unlimited Story Posting</h4>
+
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="chart__row">
+                <h4>Unlimited Photo Upload</h4>
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="chart__row">
+                <h4>Embedding Custom Content</h4>
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="chart__row">
+                <h4>Customize Metadata</h4>
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="chart__row">
+                <h4>Advanced Metrics</h4>
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="chart__row">
+                <h4>Photo Downloads</h4>
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="chart__row">
+                <h4>Search Engine Indexing</h4>
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="chart__row">
+                <h4>Custom Analytics</h4>
+                <div class="chart__row__features">
+                    <p>Basic</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>pro</p>
+                    <div class="check__container"></div>
+                </div>
+                <div class="chart__row__features">
+                    <p>business</p>
+                    <div class="check__container">
+                        <img
+                            src="./assets/pricing/desktop/check.svg"
+                            alt="check"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHART END -->
+
+        <div class="cta">
+            <picture>
+                <source
+                    media="(min-width: 1250px)"
+                    srcset="./assets/shared/desktop/bg-beta.jpg"
+                />
+                <source
+                    media="(min-width: 600px)"
+                    srcset="./assets/shared/tablet/bg-beta.jpg"
+                />
+                <img
+                    src="./assets/shared/mobile/bg-beta.jpg"
+                    alt="cta background"
+                />
+            </picture>
+
+            <div class="cta__text">
+                <h2>We're in Beta. Get your invite today!</h2>
+                <div class="btn--invite btn">
+                    <a href="#" class="link-font">Get an invite</a
+                    ><img
+                        src="./assets/shared/desktop/arrow--white.svg"
+                        alt="arrow"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER START  -->
+
+        <footer class="footer">
+            <div class="footer--info">
+                <a href="index.html">
+                    <img
+                        class="footer__logo"
+                        src="./assets/shared/desktop/logo--white.svg"
+                    />
+                </a>
+
+                <div class="footer__social">
+                    <img
+                        src="./assets/shared/desktop/facebook.svg"
+                        alt="facebook"
+                    />
+                    <img
+                        src="./assets/shared/desktop/youtube.svg"
+                        alt="youtube"
+                    />
+                    <img
+                        src="./assets/shared/desktop/twitter.svg"
+                        alt="twitter"
+                    />
+                    <img
+                        src="./assets/shared/desktop/pinterest.svg"
+                        alt="pinterest"
+                    />
+                    <img
+                        src="./assets/shared/desktop/instagram.svg"
+                        alt="instagram"
+                    />
+                </div>
+                <ul class="footer__links link-font">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer--wide">
+                <div class="btn--invite btn">
+                    <a href="#" class="link-font">Get an invite</a
+                    ><img
+                        src="./assets/shared/desktop/arrow--white.svg"
+                        alt="arrow"
+                    />
+                </div>
+                <p class="copyright">Copyright 2019. All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <!-- FOOTER END -->
+    </body>
+</html>

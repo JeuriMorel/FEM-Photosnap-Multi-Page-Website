@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png"
+        />
+
+        <script src="./script.js" defer></script>
+
+        <link rel="stylesheet" href="../dist/css/normalize.css" />
+        <link rel="stylesheet" href="../dist/css/styles.css" />
+
+        <title>Frontend Mentor | Photosnap Website Challenge</title>
+    </head>
+    <body>
+        <!-- HEADER START -->
+
+        <header class="header">
+            <a href="index.html">
+                <img
+                    class="header__logo"
+                    src="./assets/shared/desktop/logo.svg"
+                />
+            </a>
+            <ul class="header__links link-font">
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <a href="#" class="header__btn">
+                <button class="btn--invite link-font">Get an invite</button>
+            </a>
+            <img
+                src="./assets/shared/mobile/menu.svg"
+                alt="navigation menu icon"
+                class="header__menu__btn"
+                id="hamburger"
+            />
+
+            <div class="mobile__menu" id="mobileNav">
+                <ul class="mobile__menu__links">
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+<a href="#" class="mobile__menu__btn">
+                    <button class="mobile__menu__btn">Get an invite</button>
+                </a>            </div>
+        </header>
+
+        <!-- HEADER END -->
+
+        <!-- HERO START -->
+
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 1250px)"
+                    srcset="./assets/features/desktop/hero.jpg"
+                />
+                <source
+                    media="(min-width: 600px)"
+                    srcset="./assets/features/tablet/hero.jpg"
+                />
+                <img
+                    src="./assets/features/mobile/hero.jpg"
+                    alt="features hero"
+                    class="hero__img"
+                />
+            </picture>
+            <div>
+                <div class="hero__text__container">
+                    <h2>Features</h2>
+                    <p>
+                        We make sure all of our features are designed to be
+                        loved by every aspiring and even professional
+                        photograpers who wanted to share their stories.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HERO END -->
+
+        <!-- INFO START  -->
+
+        <div class="info info--2x">
+            <div class="info__container">
+                <img
+                    src="./assets/features/desktop/responsive.svg"
+                    alt="responsive"
+                />
+                <h3>100% Responsive</h3>
+                <p>
+                    No matter which the device you’re on, our site is fully
+                    responsive and stories look beautiful on any screen.
+                </p>
+            </div>
+            <div class="info__container">
+                <img
+                    src="./assets/features/desktop/no-limit.svg"
+                    alt="no-limit"
+                />
+                <h3>No Photo Upload Limit</h3>
+                <p>
+                    Our tool has no limits on uploads or bandwidth. Freely
+                    upload in bulk and share all of your stories in one go.
+                </p>
+            </div>
+            <div class="info__container">
+                <img src="./assets/features/desktop/embed.svg" alt="embed" />
+                <h3>Available to Embed</h3>
+                <p>
+                    Embed Tweets, Facebook posts, Instagram media, Vimeo or
+                    YouTube videos, Google Maps, and more.
+                </p>
+            </div>
+
+            <div class="info__container">
+                <img
+                    src="./assets/features/desktop/custom-domain.svg"
+                    alt="responsive"
+                />
+                <h3>Custom Domain</h3>
+                <p>
+                    With Photosnap subscriptions you can host your stories on
+                    your own domain. You can also remove our branding!
+                </p>
+            </div>
+            <div class="info__container">
+                <img
+                    src="./assets/features/desktop/boost-exposure.svg"
+                    alt="no-limit"
+                />
+                <h3>Boost Your Exposure</h3>
+                <p>
+                    Users that viewed your story or gallery can easily get
+                    notifed of new and featured stories with our built in
+                    mailing list.
+                </p>
+            </div>
+            <div class="info__container">
+                <img
+                    src="./assets/features/desktop/drag-drop.svg"
+                    alt="embed"
+                />
+                <h3>Drag & Drop Image</h3>
+                <p>
+                    Easily drag and drop your image and get beautiful shots
+                    everytime. No over the top tooling to add friction to
+                    creating stories.
+                </p>
+            </div>
+        </div>
+
+        <!-- INFO END -->
+
+        <div class="cta">
+            <picture>
+                <source
+                    media="(min-width: 1250px)"
+                    srcset="./assets/shared/desktop/bg-beta.jpg"
+                />
+                <source
+                    media="(min-width: 600px)"
+                    srcset="./assets/shared/tablet/bg-beta.jpg"
+                />
+                <img
+                    src="./assets/shared/mobile/bg-beta.jpg"
+                    alt="cta background"
+                />
+            </picture>
+
+            <div class="cta__text">
+                <h2>We're in Beta. Get your invite today!</h2>
+                <div class="btn--invite btn">
+                    <a href="#" class="link-font">Get an invite</a
+                    ><img
+                        src="./assets/shared/desktop/arrow--white.svg"
+                        alt="arrow"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER START  -->
+
+        <footer class="footer">
+            <div class="footer--info">
+                <a href="index.html">
+                    <img
+                        class="footer__logo"
+                        src="./assets/shared/desktop/logo--white.svg"
+                    />
+                </a>
+
+                <div class="footer__social">
+                    <img
+                        src="./assets/shared/desktop/facebook.svg"
+                        alt="facebook"
+                    />
+                    <img
+                        src="./assets/shared/desktop/youtube.svg"
+                        alt="youtube"
+                    />
+                    <img
+                        src="./assets/shared/desktop/twitter.svg"
+                        alt="twitter"
+                    />
+                    <img
+                        src="./assets/shared/desktop/pinterest.svg"
+                        alt="pinterest"
+                    />
+                    <img
+                        src="./assets/shared/desktop/instagram.svg"
+                        alt="instagram"
+                    />
+                </div>
+                <ul class="footer__links link-font">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer--wide">
+                <div class="btn--invite btn">
+                    <a href="#" class="link-font">Get an invite</a
+                    ><img
+                        src="./assets/shared/desktop/arrow--white.svg"
+                        alt="arrow"
+                    />
+                </div>
+                <p class="copyright">Copyright 2019. All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <!-- FOOTER END -->
+    </body>
+</html>

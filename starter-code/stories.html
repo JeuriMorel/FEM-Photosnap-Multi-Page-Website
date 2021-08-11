@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png"
+        />
+
+        <script src="./script.js" defer></script>
+
+        <link rel="stylesheet" href="../dist/css/normalize.css" />
+        <link rel="stylesheet" href="../dist/css/styles.css" />
+
+        <title>Frontend Mentor | Photosnap Website Challenge | Stories</title>
+    </head>
+    <body class="stories">
+        <!-- HEADER START -->
+
+        <header class="header">
+            <a href="index.html">
+                <img
+                    class="header__logo"
+                    src="./assets/shared/desktop/logo.svg"
+                />
+            </a>
+            <ul class="header__links link-font">
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+            <a href="#" class="header__btn">
+                <button class="btn--invite link-font">Get an invite</button>
+            </a>
+            <img
+                src="./assets/shared/mobile/menu.svg"
+                alt="navigation menu icon"
+                class="header__menu__btn"
+                id="hamburger"
+            />
+
+            <div class="mobile__menu" id="mobileNav">
+                <ul class="mobile__menu__links">
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+                <a href="#" class="mobile__menu__btn">
+                    <button class="mobile__menu__btn">Get an invite</button>
+                </a>
+            </div>
+        </header>
+
+        <!-- HEADER END -->
+
+        <!-- HERO START -->
+
+        <div class="stories__hero">
+            <picture>
+                <source
+                    media="(min-width: 1250px)"
+                    srcset="./assets/stories/desktop/moon-of-appalacia.jpg"
+                />
+                <source
+                    media="(min-width: 600px)"
+                    srcset="./assets/stories/tablet/moon-of-appalacia.jpg"
+                />
+                <img
+                    src="./assets/stories/mobile/moon-of-appalacia.jpg"
+                    alt="moon of Appalachia"
+                    class="hero__img"
+                />
+            </picture>
+
+            <div class="stories__hero__text">
+                <h4 class="link-font subheader">Last month's featured story</h4>
+                <h2>Hazy full moon of Appalachia</h2>
+                <small
+                    ><span>March 2nd 2020 &nbsp;</span> by John Appleseed</small
+                >
+                <p>
+                    The dissected plateau area, while not actually made up of
+                    geological mountains, is popularly called "mountains,"
+                    especially in eastern Kentucky and West Virginia, and while
+                    the ridges are not high, the terrain is extremely rugged.
+                </p>
+
+                <div class="link-font read-story">
+                    <a href="#">Read the Story</a
+                    ><img
+                        src="./assets/shared/desktop/arrow--white.svg"
+                        alt="arrow"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO END -->
+
+        <!-- CARDS START -->
+
+        <main class="cards">
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/mountains.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/mountains.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>April 16th 2020</small>
+                        <h3>The Mountains</h3>
+                        <small>by John Appleseed</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/cityscapes.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/cityscapes.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>April 14th 2020</small>
+                        <h3>Sunset Cityscapes</h3>
+                        <small>by Benjamin Cruz</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/18-days-voyage.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/18-days-voyage.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>April 11th 2020</small>
+                        <h3>18 Days Voyage</h3>
+                        <small>by Alexei Borodin</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/architecturals.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/architecturals.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>April 9th 2020</small>
+                        <h3>Architecturals</h3>
+                        <small>by Samantha Brooke</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/world-tour.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/world-tour.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>April 7th 2020</small>
+                        <h3>World Tour 2019</h3>
+                        <small>by Timothy Wagner</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/unforeseen-corners.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/unforeseen-corners.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>April 3rd 2020</small>
+                        <h3>Unforeseen Corners</h3>
+                        <small>by William Malcolm</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/king-on-africa.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/king-on-africa.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 29th 2020</small>
+                        <h3>King on Africa: Part II</h3>
+                        <small>by Tim Hillenburg</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/trip-to-nowhere.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/trip-to-nowhere.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 21st 2020</small>
+                        <h3>The Trip to Nowhere</h3>
+                        <small>by Felicia Rourke</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/rage-of-the-sea.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/rage-of-the-sea.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 19th 2020</small>
+                        <h3>Rage of The Sea</h3>
+                        <small>by Mohammed Abdul</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/running-free.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/running-free.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 16th 2020</small>
+                        <h3>Running Free</h3>
+                        <small>by Michelle</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/behind-the-waves.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/behind-the-waves.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 11th 2020</small>
+                        <h3>Behind the Waves</h3>
+                        <small>by Lamarr Wilson</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/calm-waters.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/calm-waters.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 9th 2020</small>
+                        <h3>Calm Waters</h3>
+                        <small>by Samantha Brooke</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/milky-way.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/milky-way.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 5th 2020</small>
+                        <h3>The Milky Way</h3>
+                        <small>by Benjamin Cruz</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/dark-forest.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/dark-forest.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 4th 2020</small>
+                        <h3>Night at The Dark Forest</h3>
+                        <small>by Mohammed Abdul</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/somwarpet.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/somwarpet.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>March 1st 2020</small>
+                        <h3>Somwarpet’s Beauty</h3>
+                        <small>by Michelle</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="cards__card">
+                    <picture class="cards__card__img">
+                        <source
+                            media="(min-width: 1000px)"
+                            srcset="./assets/stories/desktop/land-of-dreams.jpg"
+                        />
+                        <img
+                            src="./assets/stories/mobile/land-of-dreams.jpg"
+                            alt="mountains"
+                        />
+                    </picture>
+                    <div class="cards__card__text">
+                        <small>February 25th 2020</small>
+                        <h3>Land of Dreams</h3>
+                        <small>by William Malcolm</small>
+                        <div class="link-font">
+                            <p>Read Story</p
+                            ><img
+                                src="./assets/shared/desktop/arrow--white.svg"
+                                alt="arrow"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </main>
+
+        <!-- CARDS END -->
+
+        <!-- FOOTER START  -->
+
+        <footer class="footer">
+            <div class="footer--info">
+                <a href="index.html">
+                    <img
+                        class="footer__logo"
+                        src="./assets/shared/desktop/logo--white.svg"
+                    />
+                </a>
+
+                <div class="footer__social">
+                    <img
+                        src="./assets/shared/desktop/facebook.svg"
+                        alt="facebook"
+                    />
+                    <img
+                        src="./assets/shared/desktop/youtube.svg"
+                        alt="youtube"
+                    />
+                    <img
+                        src="./assets/shared/desktop/twitter.svg"
+                        alt="twitter"
+                    />
+                    <img
+                        src="./assets/shared/desktop/pinterest.svg"
+                        alt="pinterest"
+                    />
+                    <img
+                        src="./assets/shared/desktop/instagram.svg"
+                        alt="instagram"
+                    />
+                </div>
+                <ul class="footer__links link-font">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="stories.html">Stories</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer--wide">
+                <div class="btn--invite btn">
+                    <a href="#" class="link-font">Get an invite</a
+                    ><img
+                        src="./assets/shared/desktop/arrow--white.svg"
+                        alt="arrow"
+                    />
+                </div>
+                <p class="copyright">Copyright 2019. All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <!-- FOOTER END -->
+    </body>
+</html>
