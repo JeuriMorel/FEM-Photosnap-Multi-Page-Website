@@ -193,7 +193,7 @@
   position: relative;
 }
 
-.home__main section:first-of-type > div h2 {
+.home__main section:first-of-type > div h1 {
   color: white;
 }
 
@@ -675,6 +675,11 @@
           justify-content: space-between;
   width: 310px;
   height: 10rem;
+}
+
+.cta h2{
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 .cta__text .btn--invite {
@@ -1317,7 +1322,7 @@ html.open .mobile__menu {
   top: 0;
 }
 
-h2 {
+h1, h2 {
   font-size: 2.67rem;
   line-height: 3.2rem;
   text-transform: uppercase;
