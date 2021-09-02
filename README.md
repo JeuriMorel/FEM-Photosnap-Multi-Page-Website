@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/mobilefirst-multipage-website-uUzD3ISWu](https://your-solution-url.com)
-- Live Site URL: [https://fem-photosnap-multi-page-website-delta.vercel.app/](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/mobilefirst-multipage-website-uUzD3ISWu]
+- Live Site URL: [https://fem-photosnap-multi-page-website-delta.vercel.app/]
 
 ## My process
 
